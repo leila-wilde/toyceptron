@@ -14,6 +14,9 @@ class Neuron:
         args inputs takes a list [x1, x2, x3, ...]
         returns the raw output before activation
         """
+        if len(inputs) != len(self.weights):
+            raise ValueError(f"The number of {len(inputs)} doesnt maths the number of {len(self.weights)}")
+
         weight_sum = 0
         for i in range(len(inputs)):
             weight_sum += inputs[i] * self.weights[i]
