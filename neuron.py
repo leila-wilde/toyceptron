@@ -5,7 +5,7 @@
 
 class Neuron:
     def __init__(self, weights : list, bias=0.0):
-        self.weight = weights
+        self.weights = weights
         self.bias = bias
 
     def forward(self, inputs):
@@ -14,6 +14,7 @@ class Neuron:
         args inputs takes a list [x1, x2, x3, ...]
         returns the raw output before activation
         """
+        weight_sum = 0
         for i in range(len(inputs)):
             weight_sum += inputs[i] * self.weights[i]
 
