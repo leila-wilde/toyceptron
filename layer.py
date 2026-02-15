@@ -13,6 +13,11 @@ class Layer:
             self.neurons.append(neuron)
 
     def forward(self, inputs : list):
+        """
+        pass input through all neurons in the layer
+        args: inputs as a vector of numbers
+        returns: list of outputs, one from each neuron
+        """
         outputs = []
         for neuron in self.neurons:
             output = neuron.forward(inputs)
