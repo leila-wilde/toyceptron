@@ -18,6 +18,10 @@ class Layer:
         args: inputs as a vector of numbers
         returns: list of outputs, one from each neuron
         """
+        # error handling to check input size matches neuron weights
+        if len(inputs) != len(self.neurons[0].weights):
+            raise ValueError(f"The input size ({len(inputs)}) doesn't match neuron weight size ({len(self.neurons[0].weights)})")
+        
         outputs = []
         for neuron in self.neurons:
             output = neuron.forward(inputs)
