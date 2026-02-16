@@ -7,11 +7,16 @@ A simple implementation of a Perceptron neural network in Python for educational
   <a href="#fr">FR</a>
 
 # Toyceptron
+
+***Un projet minimaliste de réseau neuronal ou perceptron multicouche***
+
+---
+
 </div>
 
-Toyceptron est un projet pédagogique dont le but est de comprendre le fonctionnement interne d’un perceptron multi-couches en l’implémentant entièrement en Python, sans bibliothèques externes.
+Toyceptron est un projet pédagogique dont le but est de comprendre le fonctionnement interne d’un **perceptron multi-couches** en l’implémentant entièrement en Python, **sans** bibliothèques externes.
 
-Le principe est simple : construire un réseau de neurones minimal pour mieux en comprendre les mécanismes fondamentaux.
+L'idée est de mieux comprendre les mécanismes fondamentaux qui sous-tendent les réseaux neuronaux. 
 
 ## Objectif
 
@@ -24,19 +29,21 @@ Il n’y a pas d’apprentissage dans ce projet.
 
 ## Contraintes
 
-- Langage : Python
-- Aucune bibliothèque externe autorisée (numpy, pytorch, sklearn, etc.)
-- Les vecteurs sont représentés avec des listes Python
-- Le fichier `main.py` est fourni et sert de test
+- langage : python
+- aucune bibliothèque externe autorisée (numpy, pytorch, sklearn, etc.)
+- les vecteurs sont représentés avec des listes python
+- le fichier `main.py` est fourni et sert de test
 
 ## Structure du projet
 
+``` 
 toyceptron/
-├── neuron.py # Neurone individuel
-├── layer.py # Couche de neurones
-├── network.py # Réseau de neurones
-├── main.py # Script de test
+├── neuron.py # neurone individuel
+├── layer.py # couche de neurones
+├── network.py # réseau de neurones
+├── main.py # script de test
 └── README.md
+```
 
 ## Composants
 
@@ -51,7 +58,7 @@ Une couche est un ensemble de neurones identiques. Elle applique une entrée à 
 ### Network
 Le réseau est une composition de couches. Il propage une entrée à travers l’ensemble des couches et retourne la sortie finale.
 
-## Fonctions d’activation
+## fonctions d’activation
 
 Les fonctions suivantes sont supportées :
 - identité
@@ -59,20 +66,20 @@ Les fonctions suivantes sont supportées :
 - sigmoïde
 - ReLU
 
-## Exécution
+## exécution
 
 ``` bash
 python main.py
 ```
 
-## Compétences abordées
+## compétences abordées
 
-- Python
-- Programmation orientée objet
-- Bases des réseaux de neurones
-- Compréhension du forward pass
+- python
+- programmation orientée objet
+- bases des réseaux de neurones
+- compréhension du forward pass
 
-Projet réalisé dans un cadre pédagogique.
+*Projet réalisé dans un cadre pédagogique.*
 
 <a id="en"></a>
 
@@ -81,14 +88,15 @@ Projet réalisé dans un cadre pédagogique.
   <a href="#fr">FR</a>
 
 # Toyceptron
+
+***A minimal neural network or multi-layer perceptron project***
+
 </div>
 
 Toyceptron is an educational project aimed at understanding the internal
-workings of a multi-layer perceptron by implementing it entirely in Python,
-without external libraries.
+workings of a **multi-layer perceptron** by implementing it entirely in Python, **without** external libraries. 
 
-The principle is simple: build a minimal neural network to better understand its
-fundamental mechanisms.
+The idea is to better understand the fundamental mechanisms behind neural networks. 
 
 ## Objective
 
@@ -101,15 +109,21 @@ There is no training in this project.
 
 ## Constraints
 
-- Language: Python
-- No external libraries allowed (numpy, pytorch, sklearn, etc.)
-- Vectors are represented using Python lists
-- The `main.py` file is provided and serves as a test
+- language: python
+- no external libraries allowed (numpy, pytorch, sklearn, etc.)
+- vectors are represented using python lists
+- the `main.py` file is provided and serves as a test
 
 ## Project Structure
 
-toyceptron/ ├── neuron.py # Individual neuron ├── layer.py # Layer of neurons ├──
-network.py # Neural network ├── main.py # Test script └── README.md
+```
+toyceptron/ 
+├── neuron.py # individual neuron 
+├── layer.py # layer of neurons 
+├── network.py # neural network 
+├── main.py # test script 
+└── README.md
+```
 
 ## Components
 
@@ -127,7 +141,7 @@ neurons and returns a vector of outputs.
 The network is a composition of layers. It propagates an input through all
 layers and returns the final output.
 
-## Activation Functions
+## activation functions
 
 The following functions are supported:
 - identity
@@ -135,17 +149,17 @@ The following functions are supported:
 - sigmoid
 - ReLU
 
-## Execution
+## execution
 
 ``` bash
 python3 main.py
 ```
 
-## Skills Covered
+## skills covered
 
-- Python
-- Object-oriented programming
-- Neural network basics
-- Understanding the forward pass
+- python
+- object-oriented programming
+- neural network basics
+- understanding the forward pass
 
-Educational project.
+*Educational project.*
