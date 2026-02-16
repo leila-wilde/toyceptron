@@ -90,3 +90,6 @@ for i, layer in enumerate(net.layers):
     print(f"\nCouche {i + 1} (valeurs brutes):", raw)
     print(f"Couche {i + 1} (valeurs activées):", activated)
     inputs = activated
+
+net.summary()
+
