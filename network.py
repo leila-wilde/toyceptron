@@ -39,3 +39,14 @@ class Network:
         # input -> layer 1 -> activate -> layer 2 -> activate -> layer 3 -> activate -> output
         # each layer's output (after activation) becomes the next layer's input
 
+    def summary(self):
+        """
+        Print network architecture summary
+        Show input size, activation function and each layer's neuron count.
+        """
+        print(f"Network summary:\n")
+        print(f"Input size: {self.input_size}\n")
+        print(f"Activation: {self.activation.__name__}\n")
+        print(f"Layers: {len(self.layers)}\n")
+        for i, layer in enumerate(self.layers):
+            print(f"- layer {i + 1}: {len(layer.neurons)} neurons")
