@@ -15,7 +15,7 @@ class Neuron:
         returns the raw output before activation
         """
         if len(inputs) != len(self.weights):
-            raise ValueError(f"The number of {len(inputs)} doesnt maths the number of {len(self.weights)}")
+            raise ValueError(f"The number of inputs ({len(inputs)}) doesnt maths the number of weights ({len(self.weights)})")
 
         weight_sum = 0
         for i in range(len(inputs)):
